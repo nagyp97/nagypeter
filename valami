@@ -3,5 +3,5 @@ lxc init ubuntu:16.04 nagypeter
 lxc start nagypeter
 sleep 30
 lxc exec nagypeter -- apt update --yes
-lxc exec nagypeter -- apt update --yes
-lxc exec nagypeter -- apt-get install mc
+lxc exec nagypeter -- apt upgrade --yes
+lxc exec nagypeter -- apt-get install mc --yes
